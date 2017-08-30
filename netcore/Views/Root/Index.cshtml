@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@section Css {
+    <link rel="stylesheet" href="~/root/style.css" />
+}
+@section Script {
+    @if(@hostingEnv.EnvironmentName == "Development"){
+        <script src="~/root/script_dev.js"></script>
+    }else{
+        <script src="~/root/script.js"></script>
+    }
+}
+<div>TEST DB<button id='id-set'>SET</button></div>
+<div>TEST DB<button id='id-get'>GET</button></div>

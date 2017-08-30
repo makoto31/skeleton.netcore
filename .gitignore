@@ -1,0 +1,7 @@
+bin/
+obj/
+netcore/Logs/*
+node_modules/
+*.map
+script_dev.js
+!.gitkeep
